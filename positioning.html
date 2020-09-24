@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        /*
+        Static position is default
+        Relative position allows to use top,left,bottom and right positioning rules
+        Absolute positioning is used to show something at fixed place irrespective of size of browser
+        Fixed positioning is used to make something visible at same place even after scrolling
+        */
+        
+        #div1 {
+            background-color: blue;
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+        }
+        
+        #div2 {
+            background-color: black;
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+            position: relative;
+            top: 50px;
+            /*bottom: 50px;
+            right: 50px;*/
+            left: 50px;
+        }
+        
+        #div3 {
+            background-color: brown;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            display: inline-block;
+        }
+        
+        #div4 {
+            background-color: black;
+            width: 500px;
+            height: 500px;
+            top: 200px;
+            right: 200px;
+            position: fixed;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <p>How to enable JavaScript in Windows Applies to: Internet Explorer 9Internet Explorer 10Internet Explorer 11 Summary Many Internet Web sites contain JavaScript, a scripting programming language that runs on the web browser to make specific features
+        on the web page functional. If JavaScript has been disabled within your browser, the content or the functionality of the web page can be limited or unavailable. This article describes the steps for enabling JavaScript in web browsers. More Information
+        Internet Explorer To allow all websites within the Internet zone to run scripts within Internet Explorer: On the web browser menu, click Tools or the "Tools" icon (which looks like a gear), and select Internet Options. On the web browser menu,
+        click Tools or the When the "Internet Options" window opens, select the Security tab. On the "Security" tab, make sure the Internet zone is selected, and then click on the "Custom level..." button. On the In the Security Settings – Internet Zone
+        dialog box, click Enable for Active Scripting in the Scripting section. In the Security Settings – Internet Zone dialog box, click Enable for Active Scripting in the Scripting section. When the "Warning!" window opens and asks, "Are you sure you
+        want to change the settings for this zone?" select Yes. Click OK at the bottom of the Internet Options window to close the dialog. Click the Refresh button to refresh the page and run scripts. Click the Refresh button to refresh the page and run
+        scripts. To allow scripting on a specific website, while leaving scripting disabled in the Internet zone, add the specific Web site to the Trusted sites zone: On the web browser menu, click Tools, or the "Tools" icon (which looks like a gear)
+        and select Internet Options. On the web browser menu, click Tools, or the When the "Internet Options" window opens, select the Security tab. On the "Security" tab, select the Trusted sites zone and then click the Sites button. On the For the website(s)
+        you would like to allow scripting, enter the address within the Add this website to the zone text box and click Add. Note: If the address does not begin with "https:", you many need to uncheck "Require server verification (https:) for all sites
+        in this zone". For the website(s) you would like to allow scripting, enter the address within the Add this website to the zone text box and click Add. Click Close and then click OK at the bottom of the Internet Options window to close the dialog.
+        Click the Refresh button to refresh the page and run scripts. Click the Refresh button to refresh the page and run scripts. Google Chrome To enable JavaScript in Google Chrome, please review and follow the instructions provided at Enable JavaScript
+        in your browser to see ads on your site. Mozilla Corporation’s Firefox To enable JavaScript in Firefox, please review and follow the instructions provided at JavaScript settings for interactive web pages. Last Updated: Dec 20, 2019 Need more help?
+        Search for help Search Join the discussion ASK THE COMMUNITY Get support CONTACT US Email this article Print Subscribe RSS Feeds Was this information helpful? Yes No What's new Surface Duo Surface Go 2 Surface Book 3 Microsoft 365 Surface Pro
+        X Windows 10 apps Microsoft Store Account profile Download Center Microsoft Store support Returns Order tracking Store locations Virtual workshops and training Microsoft Store Promise Education Microsoft in education Office for students Office
+        365 for schools Deals for students & parents Microsoft Azure in education Enterprise Azure AppSource Automotive Government Healthcare Manufacturing Financial services Retail Developer Microsoft Visual Studio Windows Dev Center Developer Center
+        Microsoft developer program Channel 9 Office Dev Center Microsoft Garage Company Careers About Microsoft Company news Privacy at Microsoft Investors Diversity and inclusion Accessibility Security English (United States)
+    </p>
+    <div id="div4"></div>
+</body>
+
+</html>

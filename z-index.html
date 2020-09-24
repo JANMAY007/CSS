@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        /*z-index is used to define stack of preferrence*/
+        
+        #yellow {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            top: 0px;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        #green {
+            width: 600px;
+            height: 50px;
+            background-color: green;
+            top: 0px;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="yellow"></div>
+    <div id="green"></div>
+</body>
+
+</html>
